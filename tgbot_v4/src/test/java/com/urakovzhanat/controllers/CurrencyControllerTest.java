@@ -18,7 +18,7 @@ class CurrencyControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-//    @Test
+    @Test
     public void testWhenAskAboutAllCurrencies() throws Exception {
         mockMvc.perform(get("/getCurrencies"))
                 .andExpect(status().isOk())

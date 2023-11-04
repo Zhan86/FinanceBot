@@ -20,6 +20,7 @@ public class CurrencyController {
     private final CentralRussianBankService centralRussianBankService;
     private final StatsService statsService;
 
+
     @GetMapping("/getCurrencies")
 //    @ApiOperation(value = "Получение курса всех валют на текущий день")
     public List<ValuteCursOnDate> getValuteCursOnDate() throws Exception {
