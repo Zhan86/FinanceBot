@@ -1,9 +1,11 @@
 package com.urakovzhanat.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Date;
 @Entity
 @Table(name = "INCOMES")
 @Data
@@ -18,4 +20,8 @@ public class Income {
 
     @Column(name = "INCOME")
     private BigDecimal income;
+
+    @Column(name = "DATE")
+    @CreationTimestamp
+    private Date date;
 }
